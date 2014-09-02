@@ -1,6 +1,6 @@
 steps: [
   type: "archive"
-  url: "http://fortawesome.github.io/Font-Awesome/assets/font-awesome-4.1.0.zip"
+  url: "http://fortawesome.github.io/Font-Awesome/assets/font-awesome-4.2.0.zip"
   stripRootDir: true
   files: [
     {
