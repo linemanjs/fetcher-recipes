@@ -19,7 +19,17 @@ steps: [
   ]
 ]
 message: """
-         Bootstrap's JavaScript dependency requires jQuery. If your project
+         1. Bootstrap's sourcemap files include references to the development
+         .less file sources so you'll see an error when you start unless you
+         modify `config/application.js` to add the following configuration:
+         
+         concat_sourcemap: {
+           options: {
+             sourcesContent: false
+           }
+         }
+
+         2. Bootstrap's JavaScript dependency requires jQuery. If your project
          doesn't already include jQuery, then you may choose to add it (e.g.
          `lineman fetch jquery`), or you can delete `vendor/js/bootstrap.js`
          if you don't intend to use Bootstrap's JS library.
